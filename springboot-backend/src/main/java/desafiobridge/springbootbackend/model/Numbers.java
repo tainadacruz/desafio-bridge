@@ -1,6 +1,8 @@
 package desafiobridge.springbootbackend.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "numbers")
@@ -11,18 +13,65 @@ public class Numbers {
     private long id;
 
     @Column(name = "input_number")
-    private float x;
+    private int x;
 
     @Column(name = "duodigito")
-    private float duodigito;
+    private int duodigito;
 
     public Numbers() {
     }
 
-    public Numbers(float x, float duodigito) {
+    public Numbers(int x, int duodigito) {
         this.x = x;
         this.duodigito = duodigito;
     }
+
+    public int calculaDuodigito(int value){
+        int x = value;
+        int number = 0;
+        int flag = 0;
+        int aux = 2;
+        List<Integer> list = new ArrayList<Integer>();
+
+        while(flag == 0){
+            number = x * aux;
+            int atual = number;
+            int last;
+            System.out.println("numero " + number);
+            int length = String.valueOf(number).length();
+
+            for(int i = 0; i < length; i++){
+                last = atual % 10;
+                atual = atual / 10;
+                System.out.println("last " + last);
+
+                if(i == 0) {
+                    list.add(last);
+                }
+
+                if (list.contains(last)){
+                    continue;
+                } else {
+                    list.add(last);
+                }
+
+                if(list.size() > 2){
+                    break;
+                }
+
+            }
+
+            if (list.size() <= 2){
+                flag = 2;
+                break;
+            }
+            aux++;
+            list.clear();
+
+        }
+        return number;
+    }
+
 
     public long getId() {
         return id;
@@ -32,19 +81,19 @@ public class Numbers {
         this.id = id;
     }
 
-    public float getX() {
+    public int getX() {
         return x;
     }
 
-    public void setX(float x) {
+    public void setX(int x) {
         this.x = x;
     }
 
-    public float getDuodigito() {
+    public int getDuodigito() {
         return duodigito;
     }
 
-    public void setDuodigito(float duodigito) {
+    public void setDuodigito(int duodigito) {
         this.duodigito = duodigito;
     }
 }
