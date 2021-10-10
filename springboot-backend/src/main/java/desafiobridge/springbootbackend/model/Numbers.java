@@ -37,13 +37,11 @@ public class Numbers {
             number = x * aux;
             int atual = number;
             int last;
-            System.out.println("numero " + number);
             int length = String.valueOf(number).length();
 
             for(int i = 0; i < length; i++){
                 last = atual % 10;
                 atual = atual / 10;
-                System.out.println("last " + last);
 
                 if(i == 0) {
                     list.add(last);

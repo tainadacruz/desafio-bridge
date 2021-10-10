@@ -8,6 +8,7 @@ class ListNumbersComponent extends Component {
         this.state = {
                 numbers: []
         }
+        this.addNumber = this.addNumber.bind(this);
     }
 
     componentDidMount(){
@@ -16,11 +17,20 @@ class ListNumbersComponent extends Component {
         });
     }
 
+    addNumber(){
+        this.props.history.push('/input-number');
+    }
+
     render() {
         return (
             <div>
                 
                 <h2 className="text-center">Números e Duodígitos</h2>
+
+                <div className="container">
+                    <button className="btn btn-primary" onClick={this.addNumber}> Adicionar Número </button>
+                </div>
+
                 <div className="row">
                     <table className="table table-striped">
                         <thead>
