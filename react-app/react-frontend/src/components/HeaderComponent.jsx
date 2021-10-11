@@ -3,13 +3,16 @@ import React, { Component } from 'react';
 class HeaderComponent extends Component {
     constructor(props){
         super(props)
+
+        this.database = this.database.bind(this);
+        this.calculadora = this.calculadora.bind(this);
     }
-    
-    database = () => {
+ 
+    database(){
         this.props.history.push('/database');
     }   
     
-    calculadora = () => {
+    calculadora(){
         this.props.history.push('/input-number');
     } 
 
@@ -18,11 +21,16 @@ class HeaderComponent extends Component {
             <div>
                 <header>
                     <nav className="navbar navbar-expand-md navbar-dark bg-primary">
-                        <ul> 
-                            <li className="navbar-brand" style={{marginLeft: "1em"}}> DESAFIO FULLSTACK BRIDGE </li> 
-                            <li><button className="btn btn-primary" onClick={this.calculadora} style={{marginLeft: "1em"}}> Calculadora </button></li> 
-                            <li><button className="btn btn-primary" onClick={this.database} style={{marginLeft: "1em"}}> Database </button></li> 
+                    <a className="navbar-brand" style={{marginLeft: "1em"}} href="#"> DESAFIO FULLSTACK BRIDGE </a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto"> 
+                            <li className="nav-item"><a className="nav-link btn btn-primary" href="/input-number"> Calculadora </a></li> 
+                            <li className="nav-item"><a className="nav-link btn btn-primary" href="/database"> Database </a></li> 
                         </ul>
+                    </div>
                     </nav>
                 </header>    
             </div>

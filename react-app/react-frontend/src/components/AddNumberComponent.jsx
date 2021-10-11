@@ -32,30 +32,28 @@ class AddNumberComponent extends Component {
 
     render() {
         return (
-            <div>
-                <div className="container">
-                    <div className="row">
-                        <div className="card col-md-6 offset-md-3 offset-md-3">
-                            <h3 className="text-center"> Calculadora Duodígito </h3>
-                            <div className="card-body">
+            <div className="container-1">
+                <div class="inner-container">
+                    <div className="card col-md-6 offset-md-3 offset-md-3">
+                        <h3 className="text-center"> Calculadora Duodígito </h3>
+                        <div className="card-body">
 
-                                <form onSubmit={this.saveNumber}>
-                                    <div className="form-group">
-                                        <label>Número:</label>
-                                        <input placeholder="Insira o número a ser checado" type="number" name="number" 
-                                        className="form-control" min="100" value={this.state.number} onChange={this.changeNumberHandler} />
-                                    </div>
-                                    <button type="submit" className="btn btn-success"> Calcular </button>
-                                    <div className="form-group">
-                                        <label>Duodigito: {this.state.duodigito}</label>
-                                    </div>
-                                </form>
-
-                            </div>
+                            <form onSubmit={this.saveNumber}>
+                                <div className="form-group">
+                                    <label>Número:</label>
+                                    <input placeholder="Insira o número a ser checado" type="number" name="number" 
+                                    className="form-control" min="100" value={this.state.number} onChange={this.changeNumberHandler} />
+                                </div>
+                                <button type="submit" className="btn btn-success"> Calcular </button>
+                                <div className="form-group">
+                                    <label>Duodigito: <p> {this.state.duodigito} </p></label>
+                                </div>
+                                
+                            </form>
                         </div>
                     </div>
-                </div>  
-            </div>
+                </div>
+            </div>            
         );
     }
 }

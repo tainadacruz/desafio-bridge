@@ -1,36 +1,45 @@
-.App {
-  text-align: center;
+.navbar-brand {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 1vw;
+  font-weight: bold;
 }
 
-.above-div {
-  position: relative;
+.container {
+  padding-top: 1vw;
+  padding-bottom: 0.5vw;
+}
+
+.container-1 {
+  min-height: 80vh;
+}
+
+.inner-container {
+  padding-top: 10vh;
 }
 
 .card-body {
-  height: 100%;
   margin: 0;
+  align-content: center;
 }
 
 .form-group {
   padding-bottom: 1em;
 }
 
-.container {
-  height: 100vh;
-}
-
-.footer {
-  position: absolute;
-  min-height: 100%;
+footer {
+  position: relative;
+  bottom: 0;
   width: 100%;
   height: 3em;
-  background-color: black;
   text-align: center;
   color: white;
 }
 
 label {
   padding-bottom: 1em;
+  padding-top: 0.5vw;
+  font-weight: bold;
 }
 
 h3 {
@@ -38,14 +47,11 @@ h3 {
   padding-top: 1em;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-}
-
 li {
   display: inline;
+}
+
+p {
+  font-weight: normal;
 }
 

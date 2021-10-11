@@ -23,9 +23,9 @@ class ListNumbersComponent extends Component {
 
     render() {
         return (
-            <div>
-                
-                <h3 className="text-center">Números e Duodígitos</h3>
+            <div className="container-1">
+                <h3 className="text-center"> Tabela de Inserção</h3>
+
 
                 <div className="container">
                     <button className="btn btn-dark" onClick={this.addNumber}> Adicionar Número </button>
@@ -35,7 +35,7 @@ class ListNumbersComponent extends Component {
                     <table className="table table-striped">
                         <thead>
                             <tr>
-                                <th>Número de Entrada</th>
+                                <th>Número Inserido</th>
                                 <th>Duodígito</th>
                             </tr>
                         </thead>
@@ -51,8 +51,8 @@ class ListNumbersComponent extends Component {
                             }
                         </tbody>
                     </table>
-                </div>
 
+                </div>
             </div>
         );
     }
