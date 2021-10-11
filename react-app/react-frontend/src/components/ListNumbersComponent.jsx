@@ -25,13 +25,13 @@ class ListNumbersComponent extends Component {
         return (
             <div>
                 
-                <h2 className="text-center">Números e Duodígitos</h2>
+                <h3 className="text-center">Números e Duodígitos</h3>
 
                 <div className="container">
-                    <button className="btn btn-primary" onClick={this.addNumber}> Adicionar Número </button>
+                    <button className="btn btn-dark" onClick={this.addNumber}> Adicionar Número </button>
                 </div>
 
-                <div className="row">
+                <div className="container">
                     <table className="table table-striped">
                         <thead>
                             <tr>

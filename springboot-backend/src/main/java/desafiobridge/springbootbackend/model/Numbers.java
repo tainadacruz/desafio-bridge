@@ -40,6 +40,10 @@ public class Numbers {
             int length = String.valueOf(number).length();
 
             for(int i = 0; i < length; i++){
+                if(list.size() > 2){
+                    break;
+                }
+
                 last = atual % 10;
                 atual = atual / 10;
 
@@ -51,10 +55,6 @@ public class Numbers {
                     continue;
                 } else {
                     list.add(last);
-                }
-
-                if(list.size() > 2){
-                    break;
                 }
 
             }

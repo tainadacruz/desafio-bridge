@@ -12,11 +12,10 @@ function App() {
       <Router>
           <HeaderComponent />
             <div className="container">
-              <Switch> http://localhost:3000/
+              <Switch>
                 <Route path ="/" exact component = {AddNumberComponent}></Route>
                 <Route path ="/database" component = {ListNumbersComponent}></Route>
                 <Route path ="/input-number" component = {AddNumberComponent}></Route>
-                <AddNumberComponent />
               </Switch>
             </div>
           <FooterComponent />

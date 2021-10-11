@@ -8,7 +8,7 @@ class NumberService {
     }
 
     addNumber(number){
-        return axios.post(NUMBER_API_BASE_URL, number)
+        return axios.post(NUMBER_API_BASE_URL, (number))
     }
 }
 
