@@ -16,7 +16,7 @@ Requisitos de instalação: Node.js, React.js, Xampp
 ### Database ->
 Com o Xampp instalado, inicialize-o no terminal através do comando:
     
-    /opt/lampp/lampp start panel
+    sudo /opt/lampp/lampp start panel
 
 Crie uma base de dados nomeada "desafio-bridge" no localhost. A tabela e a inserção de dados será executada no backend.
 
