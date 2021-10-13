@@ -11,7 +11,7 @@ O backend foi desenvolvido em Java com Springboot. Para o frontend, fora aplicad
 ## Como executar:
 
 Essas intruções foram executadas no sistema operacional Manjaro KDE, e podem mudar de acordo com o sistema.
-Requisitos de instalação: Node.js, React.js, Xampp
+Requisitos de instalação: Java, Node.js, React.js, Xampp
 
 ### Database ->
 Com o Xampp instalado, inicialize-o no terminal através do comando:
