@@ -6,7 +6,7 @@ Criar um Progressive Web App (PWA) que calcula o menor número real duodígito m
 
 ## Principais tecnologias utilizadas:
 
-O backend foi desenvolvido em Java com Springboot. Para o frontend, fora aplicada a biblioteca React. A ferramenta para fazer requisições fora o Axios. Para o banco de dados, foi utilizado o Apache e o MySQL com o auxílio do software Xampp.
+O backend foi desenvolvido em Java com Springboot. Para o frontend, fora aplicada a biblioteca React e a estilização foi auxiliada pelo Bootstrap. A ferramenta para fazer requisições fora o Axios. Para o banco de dados, foi utilizado o Apache e o MySQL com o auxílio do software Xampp.
 
 ## Como executar:
 
