@@ -28,3 +28,6 @@ No terminal, execute dentro da pasta "react-frontend" o comando npm start:
 
     cd react-app/react-frontend
     npm start
+
+## Telas
+Na raiz do repositório, podem ser encontradas imagens com as telas do projeto em execuç
