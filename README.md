@@ -11,18 +11,20 @@ O backend foi desenvolvido em Java com Springboot. Para o frontend, fora aplicad
 ## Como executar:
 
 Essas intruções foram executadas no sistema operacional Manjaro KDE, e podem mudar de acordo com o sistema.
-
 Requisitos de instalação: Node.js, React.js, Xampp
 
-Database: Com o Xampp instalado, inicialize-o no terminal através do comando:
+### Database ->
+Com o Xampp instalado, inicialize-o no terminal através do comando:
     
     /opt/lampp/lampp start panel
 
 Crie uma base de dados nomeada "desafio-bridge" no localhost. A tabela e a inserção de dados será executada no backend.
 
-Backend (versão mais simples) -> Abra o projeto "springboot-backend" no ambiente de desenvolvimento de sua preferência (o ambiente utilizado  por mim foi o IntelliJ IDEA). Execute o projeto clicanco no botão de play.
+### Backend (versão mais simples) -> 
+Abra a pasta do projeto "springboot-backend" no ambiente de desenvolvimento de sua preferência (o ambiente utilizado  por mim foi o IntelliJ IDEA). Execute o projeto clicanco no botão de play.
 
-Frontend -> No terminal, execute dentro da pasta "react-app" o comando npm start:
+### Frontend -> 
+No terminal, execute dentro da pasta "react-app" o comando npm start:
 
     cd react-frontend/react-app
     npm start
