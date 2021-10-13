@@ -24,7 +24,7 @@ Crie uma base de dados nomeada "desafio-bridge" no localhost. A tabela e a inser
 Abra a pasta do projeto "springboot-backend" no ambiente de desenvolvimento de sua preferência (o ambiente utilizado  por mim foi o IntelliJ IDEA). Execute o projeto clicanco no botão de play.
 
 ### Frontend -> 
-No terminal, execute dentro da pasta "react-app" o comando npm start:
+No terminal, execute dentro da pasta "react-frontend" o comando npm start:
 
-    cd react-frontend/react-app
+    cd react-app/react-frontend
     npm start
